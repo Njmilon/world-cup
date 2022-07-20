@@ -1,4 +1,4 @@
-/* universal selector */
+/* universal style */
 * {
     padding: 0;
     margin: 0;
@@ -10,15 +10,17 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* wrapper style */
 .wrapper {
     width: 84%;
     margin: 0 auto;
 }
 
-/* header section start  */
+/*----------------------------- 
+    header section start
+-------------------------------*/
 
 .main-header {
-
     margin-top: 5vh;
     background: #161616;
     border-radius: 30px;
@@ -43,26 +45,21 @@ body {
 .header-text h1 {
     font-weight: 700;
     font-size: 4.5em;
-    /* line-height: 80px; */
 }
 
 .header-text p {
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 26px; */
-    /* margin-right: 80px; */
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .header-image {
-    /* position: relative; */
     width: 90%;
-    /* top: 4px; */
     padding-top: 20px;
 }
 
-/* button hover animaton start  */
+/* header button hover animaton start  */
 .hover-glow-btn {
     font-size: 18px;
     font-weight: 500;
@@ -127,6 +124,10 @@ body {
 
 /* button hover animaton end  */
 
+/*-------------------------------- 
+        header section end
+----------------------------------*/
+
 /* blog nav start  */
 
 .button {
@@ -145,7 +146,6 @@ body {
     color: black;
     border: 1px solid black;
 }
-
 
 .blog-container {
     display: flex;
@@ -180,6 +180,8 @@ body {
 .hidden-btn {
     display: none;
 }
+
+/* blog nav end  */
 
 /* blog card start */
 
@@ -226,6 +228,8 @@ body {
     color: gray;
 }
 
+/* blog card start */
+
 /* footer start  */
 
 footer {
@@ -240,7 +244,6 @@ footer {
     margin: 0 auto;
     text-align: center;
     padding-top: 30px;
-    /* line-height: 50px; */
 }
 
 .footer-content h1 {
@@ -258,11 +261,14 @@ footer a {
     margin-top: 70px;
 }
 
-/*----------------------
-media query start  
------------------------*/
+/* footer end */
 
-/* tablet media query start*/
+
+/*-------------------------------
+        media query start  
+---------------------------------*/
+
+/* tablet device media query start*/
 
 @media only screen and (min-width:700px) and (max-width:1200px) {
 
@@ -273,8 +279,6 @@ media query start
 
     .header-content {
         width: 100%;
-        /* height: 56vh; */
-        /* height: 500px; */
     }
 
     .header-text {
@@ -284,7 +288,6 @@ media query start
     .header-text h1 {
         font-weight: 500;
         font-size: 3rem;
-        /* line-height: 10px; */
     }
 
     .header-image {
@@ -304,7 +307,6 @@ media query start
 
     .nav-container {
         width: 100%;
-        /* border: 1px solid; */
     }
 
     .nav {
@@ -342,8 +344,9 @@ media query start
     }
 }
 
+/* tablet device media query end*/
 
-/* mobile media query start*/
+/* mobile device media query start*/
 
 @media only screen and (max-width:699px) {
 
@@ -386,7 +389,6 @@ media query start
 
     .nav-container {
         width: 90%;
-        /* border: 1px solid; */
         margin: 0 auto;
     }
 
@@ -399,7 +401,6 @@ media query start
     .button {
         padding: 22px 0px;
         width: 220px;
-        /* height: 65px; */
     }
 
     .button-extra {
@@ -413,7 +414,6 @@ media query start
         margin-top: 20px;
     }
 
-    /* card style  */
     .cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -431,10 +431,11 @@ media query start
     }
 
     .footer-link {
-        /* margin-top: 70px; */
         display: flex;
         flex-direction: column;
         row-gap: 30px;
         font-size: 20px;
     }
 }
+
+/* mobile device media query end*/
