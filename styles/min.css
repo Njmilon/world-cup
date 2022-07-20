@@ -1,0 +1,35 @@
+.flag-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.flag-container p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.flag-card {
+    /* border: 1px solid; */
+    text-align: center;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    margin-top: 54px;
+}
+
+.flag-container img {
+    width: 36%;
+    margin-bottom: 20px;
+}
+
+.fixer-match {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fixer-date {
+    color: gray;
+    font-size: 15px;
+}
