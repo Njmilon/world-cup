@@ -231,7 +231,7 @@ body {
 footer {
     background-color: #161616;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     color: white;
 }
 
@@ -258,9 +258,13 @@ footer a {
     margin-top: 70px;
 }
 
-/* media query start  */
+/*----------------------
+media query start  
+-----------------------*/
 
-@media only screen and (min-width:700px) and (max-width:1000px) {
+/* tablet media query start*/
+
+@media only screen and (min-width:700px) and (max-width:1200px) {
 
     .wrapper {
         width: 80%;
@@ -314,10 +318,7 @@ footer a {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* row-gap: 30px;
-        column-gap: 200px; */
         padding: 0 20px;
-        /* width: 100%; */
     }
 
     .card {
@@ -331,8 +332,109 @@ footer a {
         margin-top: 40px;
     }
 
+    footer {
+        height: 54vh;
+    }
+
     .footer-link {
         margin-top: 50px;
         line-height: 50px;
+    }
+}
+
+
+/* mobile media query start*/
+
+@media only screen and (max-width:699px) {
+
+    .main-header {
+        margin-bottom: 40px;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header-text {
+        padding: 30px;
+    }
+
+    .header-text p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header-text h1 {
+        font-weight: 900;
+        font-size: 3.0em;
+        margin-bottom: 20px;
+        /* line-height: 80px; */
+    }
+
+    .blog-container {
+        display: flex;
+        /* margin-bottom: 100px; */
+        flex-direction: column;
+    }
+
+    .nav-container {
+        width: 90%;
+        /* border: 1px solid; */
+        margin: 0 auto;
+    }
+
+    .nav {
+        background-color: rgb(255, 251, 251);
+        margin-bottom: 36px;
+        padding-top: 0;
+    }
+
+    .button {
+        padding: 22px 0px;
+        width: 220px;
+        /* height: 65px; */
+    }
+
+    .button-extra {
+        background-image: none;
+        color: black;
+        border: 1px solid gray;
+        font-size: 20px;
+    }
+
+    .hover-glow-btn {
+        margin-top: 20px;
+    }
+
+    /* card style  */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        column-gap: 0px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        height: 90vh;
+    }
+
+    .footer-link {
+        /* margin-top: 70px; */
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        font-size: 20px;
     }
 }
